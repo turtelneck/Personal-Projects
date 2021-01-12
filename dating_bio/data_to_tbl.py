@@ -15,7 +15,11 @@ def make_conn(file):
 
 
 def bio_to_db(conn, bio_data):
+    print(bio_data)
     for bio in bio_data:
+
+        print(bio)
+
         bio_to_tbl = ''' INSERT INTO Bio_Stats(bio,age,industry)
                     VALUES(?,?,?) '''
         cur = conn.cursor()
@@ -23,19 +27,35 @@ def bio_to_db(conn, bio_data):
         conn.commit()
 
 
-def words_to_db(conn, words):
-    for word in words:
-        words_to_tbl = ''' INSERT INTO Wordcount(word,count)
-                    VALUES(?,?) '''
+def words_to_db(conn, dict):
+    keys = dict.keys()
+    values = dict.values()
+    
+    for key in keys:
+
+        print(key)
+        
+        keys_to_tbl = ''' INSERT INTO Wordcount(word)
+                    VALUES(?) '''
         cur = conn.cursor()
-        cur.execute(words_to_tbl, word)
+        cur.execute(keys_to_tbl, (key,))
+        conn.commit()
+
+    for value in values:
+
+        print(value)
+        
+        values_to_tbl = ''' INSERT INTO Wordcount(word)
+                    VALUES(?) '''
+        cur = conn.cursor()
+        cur.execute(values_to_tbl, (value,))
         conn.commit()
 
 
 def sel_from_tbls(conn, tbls):
     cur = conn.cursor()
     for tbl in tbls:
-        cur.execute("SELECT * FROM {tbl}")
+        cur.execute("SELECT * FROM {}".format(tbl))
 
         rows = cur.fetchall()
         
