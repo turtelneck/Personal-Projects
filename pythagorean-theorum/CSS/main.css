@@ -1,0 +1,33 @@
+html {
+	font-family: arial;
+}
+.container {
+	height: 30%;
+	width: 40%;
+	margin: auto;
+	padding: 70px 0px 70px;
+}
+input {
+	text-align: center;
+	padding: 3px;
+	height: 20px;
+}
+.button-container {
+	width: 234px;
+	height: 100%;
+	margin: auto;
+}
+button {
+	height: 30px;
+}
+form {
+	height: 31px;
+	width: 363px;
+	margin: auto;
+}
+#intro {
+	text-align: center;
+}
+#solution {
+	text-align: center;
+}

@@ -3,31 +3,20 @@
 <head>
 	<title>Pythagorean Demonstration</title>
 	<script type="text/javascript" src="JS/main.js"></script>
-	<style type="text/css">
-		html {
-			font-family: arial;
-		}
-		input {
-			text-align: center;
-			padding: 3px;
-			height: 20px;
-		}
-		button {
-			height: 30px;
-			position: relative;
-		    left: 67px;
-		    top: 7px;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="CSS/main.css">
 </head>
 <body>
-	<p>pick a couple numbers:</p>
-	<form>
-		<input type="number" id="sideA" name="sideA">
-		<input type="number" id="sideB" name="sideB">
-	</form>
-	<br>
-	<button onclick="pythagoreanTheorum(sideA.value, sideB.value)">O great pythagoras, I summon thee!</button>
-	<p id="solution"></p>
+	<div class="container">
+		<p id="intro">go ahead, pick some numbers:</p>
+		<form>
+			<input type="number" id="sideA" name="sideA">
+			<input type="number" id="sideB" name="sideB">
+		</form>
+		<br>
+		<div class="button-container">
+			<button onclick="pythagoreanTheorum(sideA.value, sideB.value)">O great pythagoras, I summon thee!</button>
+		</div>
+		<p id="solution"></p>
+	</div>
 </body>
 </html>
