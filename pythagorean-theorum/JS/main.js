@@ -23,5 +23,5 @@ function pythagoreanTheorum(a, b) {
 	}
 	// theorum is "a^2 + b^2 = c^2"
 	// the magic piece of code that gets the solution is `sqrt(pow(a) + pow(b))`
-	document.getElementById("solution").innerHTML = "the square root of the hypotenuse is... " + sqrt(pow(a) + pow(b))
+	document.getElementById("solution").innerHTML = "the square root of your hypotenuse is... " + sqrt(pow(a) + pow(b))
 }
