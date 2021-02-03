@@ -45,7 +45,7 @@ def words_to_db(conn, dict):
 
         print(value)
         
-        values_to_tbl = ''' INSERT INTO Wordcount(word)
+        values_to_tbl = ''' INSERT INTO Wordcount(count)
                     VALUES(?) '''
         cur = conn.cursor()
         cur.execute(values_to_tbl, (value,))

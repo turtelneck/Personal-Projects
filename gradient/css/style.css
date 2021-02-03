@@ -1,9 +1,18 @@
-body {
-	margin: 0px;
+.bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #000000;
 }
 
-#gradient-guy {
-	height: 100vh;
-	width: 100vw;
-	background: linear-gradient(45deg, rgba(255,88,89,1) 0%, rgba(145,152,229,1));
+.main {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0%;
+	background-color: #fff;
 }

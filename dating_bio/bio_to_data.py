@@ -97,7 +97,7 @@ def data_to_db(bio_data, word_data):
     print_all()
 
 
-def print_all()
+def print_all():
     '''
     User may print all avaialable data
     '''
