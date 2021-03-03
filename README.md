@@ -4,7 +4,7 @@
         <a href="https://github.com/turtelneck/Personal-Projects/tree/main/dating_bio">Dating Bio Tracker</a> | Sqlite DB
     </li>
     <li>
-        <a href="https://github.com/turtelneck/Personal-Projects/tree/main/pythagorean-theorum">Pythagorean Theorum</a> | Sqrt() implemented from scratch
+        <a href="https://github.com/turtelneck/Personal-Projects/tree/main/pythagorean-theorum">Pythagorean Theorum</a> | sqrt() implemented from scratch
     </li>
 </ul>
 Dating Bio Tracker:
