@@ -13,7 +13,7 @@ function pythagoreanTheorum(a, b) {
 		function improve(guess) { // improves number if it doesn't work as a solution
 			return (guess + x / guess) / 2;
 		}
-		// if the current guess works, it's returned as a string rounded to the hundredth's place (fixed-point notation)
+		// if the current guess works, it's returned as a string rounded to the hundredths place (fixed-point notation)
 		// if the current guess doesn't work, recur
 		function newTry(guess) {
 			return (closeEnough(guess)) ? guess.toFixed(2) : newTry(improve(guess))
