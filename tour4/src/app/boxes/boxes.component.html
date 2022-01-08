@@ -1,0 +1,23 @@
+<h2>My Boxes</h2>
+
+<div>
+  <label for="new-box">Box name: </label>
+  <input id="new-box" #boxName />
+  <label for="new-box">Box weight: </label>
+  <input id="new-box" type="number" #boxWeight />
+
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button class="add-button" (click)="add(boxName.value, boxWeight.valueAsNumber); boxName.value=''">
+    Add box
+  </button>
+</div>
+
+<ul class="boxes">
+  <li *ngFor="let box of boxes">
+    <a routerLink="/detail/{{box.id}}">
+      <span class="badge">{{box.id}}</span> {{box.name}}
+    </a>
+    <button class="delete" title="delete box"
+      (click)="delete(box)">x</button>
+  </li>
+</ul>
