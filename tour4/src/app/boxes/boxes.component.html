@@ -12,12 +12,12 @@
   </button>
 </div>
 
-<ul class="boxes">
-  <li *ngFor="let box of boxes">
+<div class="boxes">
+  <div *ngFor="let box of boxes" class="single-box">
     <a routerLink="/detail/{{box.id}}">
       <span class="badge">{{box.id}}</span> {{box.name}}
     </a>
     <button class="delete" title="delete box"
       (click)="delete(box)">x</button>
-  </li>
-</ul>
+  </div>
+</div>

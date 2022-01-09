@@ -1,9 +1,12 @@
 /* BoxesComponent's private CSS styles */
 .boxes {
-  margin: 0 0 2em 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  place-items: center;
   list-style-type: none;
-  padding: 0;
-  width: 15em;
+  padding: 5%;
+  margin: auto;
+  max-width: 950px; /* ensures columns sit at 4, may need to be changed when contents of .single-box are changed */
 }
 
 input {
@@ -15,12 +18,13 @@ input {
   box-sizing: border-box;
 }
 
-.boxes li {
+.boxes .single-box {
   position: relative;
   cursor: pointer;
+  max-width:  200px;
 }
 
-.boxes li:hover {
+.boxes .single-box:hover {
   left: .1em;
 }
 
@@ -75,9 +79,7 @@ input {
 }
 
 button.delete {
-  position: absolute;
-  left: 210px;
-  top: 5px;
+  position: relative;
   background-color: white;
   color:  #525252;
   font-size: 1.1rem;
