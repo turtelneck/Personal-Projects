@@ -33,10 +33,10 @@ export class BoxDetailComponent implements OnInit {
     this.location.back();
   }
 
-  save(): void {
-    if (this.box) {
-      this.boxService.updateBox(this.box)
-        .subscribe(() => this.goBack());
-    }
-  }
+  // save(): void {
+  //   if (this.box) {
+  //     this.boxService.updateBox(this.box)
+  //       .subscribe(() => this.goBack());
+  //   }
+  // }
 }

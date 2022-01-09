@@ -67,33 +67,34 @@ export class BoxService {
     );
   }
 
-  //////// Save methods //////////
+  // //////// Save methods ////////// 
+  // // ! NOT CURRENTLY IN USE !!!!!!
 
-  /** POST: add a new box to the server */
-  addBox(box: Box): Observable<Box> {
-    return this.http.post<Box>(this.boxesUrl, box, this.httpOptions).pipe(
-      tap((newBox: Box) => this.log(`added box w/ id=${newBox.id}`)),
-      catchError(this.handleError<Box>('addBox'))
-    );
-  }
+  // /** POST: add a new box to the server */
+  // addBox(box: Box): Observable<Box> {
+  //   return this.http.post<Box>(this.boxesUrl, box, this.httpOptions).pipe(
+  //     tap((newBox: Box) => this.log(`added box w/ id=${newBox.id}`)),
+  //     catchError(this.handleError<Box>('addBox'))
+  //   );
+  // }
 
-  /** DELETE: delete the box from the server */
-  deleteBox(id: number): Observable<Box> {
-    const url = `${this.boxesUrl}/${id}`;
+  // /** DELETE: delete the box from the server */
+  // deleteBox(id: number): Observable<Box> {
+  //   const url = `${this.boxesUrl}/${id}`;
 
-    return this.http.delete<Box>(url, this.httpOptions).pipe(
-      tap(_ => this.log(`deleted box id=${id}`)),
-      catchError(this.handleError<Box>('deleteBox'))
-    );
-  }
+  //   return this.http.delete<Box>(url, this.httpOptions).pipe(
+  //     tap(_ => this.log(`deleted box id=${id}`)),
+  //     catchError(this.handleError<Box>('deleteBox'))
+  //   );
+  // }
 
-  /** PUT: update the box on the server */
-  updateBox(box: Box): Observable<any> {
-    return this.http.put(this.boxesUrl, box, this.httpOptions).pipe(
-      tap(_ => this.log(`updated box id=${box.id}`)),
-      catchError(this.handleError<any>('updateBox'))
-    );
-  }
+  // /** PUT: update the box on the server */
+  // updateBox(box: Box): Observable<any> {
+  //   return this.http.put(this.boxesUrl, box, this.httpOptions).pipe(
+  //     tap(_ => this.log(`updated box id=${box.id}`)),
+  //     catchError(this.handleError<any>('updateBox'))
+  //   );
+  // }
 
   /**
    * Handle Http operation that failed.

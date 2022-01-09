@@ -22,12 +22,12 @@ export class BoxesComponent implements OnInit {
     .subscribe(boxes => this.boxes = boxes);
   }
 
-  add(name: string, weight: number): void {
-    name = name.trim();
-    if (!name || !weight) { return; }
-    this.boxService.addBox({ name, weight } as Box)
-      .subscribe(box => {
-        this.boxes.push(box);
-      });
-  }
+  // add(name: string, weight: number): void {
+  //   name = name.trim();
+  //   if (!name || !weight) { return; }
+  //   this.boxService.addBox({ name, weight } as Box)
+  //     .subscribe(box => {
+  //       this.boxes.push(box);
+  //     });
+  // }
 }
