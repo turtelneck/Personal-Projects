@@ -30,10 +30,4 @@ export class BoxesComponent implements OnInit {
         this.boxes.push(box);
       });
   }
-
-  delete(box: Box): void {
-    this.boxes = this.boxes.filter(h => h !== box);
-    this.boxService.deleteBox(box.id).subscribe();
-  }
-
 }

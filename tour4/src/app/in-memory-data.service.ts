@@ -8,14 +8,14 @@ import { Box } from './box';
 export class InMemoryDataService implements InMemoryDbService {
   createDb() {
     const boxes: Box[] = [
-      { id: 11, name: 'Stō Stacker, Mark II', weight: 7 },
-      { id: 12, name: 'Stō Stacker, Mark I', weight: 8 },
-      { id: 13, name: 'Big Stō', weight: 17 },
-      { id: 14, name: 'Big Big Stō', weight: 23 },
-      { id: 15, name: 'Old Stō L', weight: 1 },
-      { id: 16, name: 'Old Stō M', weight: 1 },
-      { id: 17, name: 'Old Stō S', weight: 1 },
-      { id: 18, name: 'Stō Zerō', weight: 0 }
+      { id: 11, name: 'Stō Stacker, Mark II', weight: 7, imageAddress: 'assets/img/old-sto-L.jpg', imageAltDescription: 'sto stacker mark ii' },
+      { id: 12, name: 'Stō Stacker, Mark I', weight: 8, imageAddress: 'assets/img/old-sto-L.jpg', imageAltDescription: 'sto stacker mark i' },
+      { id: 13, name: 'Big Stō', weight: 17, imageAddress: 'assets/img/old-sto-L.jpg', imageAltDescription: 'big sto box' },
+      { id: 14, name: 'Big Big Stō', weight: 23, imageAddress: 'assets/img/old-sto-L.jpg', imageAltDescription: 'big big sto box' },
+      { id: 15, name: 'Old Stō L', weight: 1, imageAddress: 'assets/img/old-sto-L.jpg', imageAltDescription: 'large cardboard box' },
+      { id: 16, name: 'Old Stō M', weight: 1, imageAddress: 'assets/img/old-sto-L.jpg', imageAltDescription: 'medium cardboard box' },
+      { id: 17, name: 'Old Stō S', weight: 1, imageAddress: 'assets/img/old-sto-L.jpg', imageAltDescription: 'small cardboard box' },
+      { id: 18, name: 'Stō Zerō', weight: 0, imageAddress: 'assets/img/old-sto-L.jpg', imageAltDescription: 'sto zero box' }
     ];
     return {boxes};
   }

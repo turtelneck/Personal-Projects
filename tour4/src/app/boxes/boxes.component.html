@@ -15,9 +15,10 @@
 <div class="boxes">
   <div *ngFor="let box of boxes" class="single-box">
     <a routerLink="/detail/{{box.id}}">
-      <span class="badge">{{box.id}}</span> {{box.name}}
+      <div class="title">{{box.name}}</div>
     </a>
-    <button class="delete" title="delete box"
-      (click)="delete(box)">x</button>
+    <a routerLink="/detail/{{box.id}}">
+      <img src="{{box.imageAddress}}" alt="{{box.imageAltDescription}}">
+    </a>
   </div>
 </div>
