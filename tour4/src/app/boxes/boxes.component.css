@@ -5,7 +5,7 @@
   place-items: center;
   list-style-type: none;
   padding: 2%;
-  margin: auto;
+  margin: 8rem auto 0 auto;
   max-width: 1320px; /* ensures columns sit at 4, needs to be changed when contents of .single-box are changed */
 }
 
