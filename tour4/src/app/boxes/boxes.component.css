@@ -4,9 +4,9 @@
   grid-template-columns: repeat(auto-fit, minmax(220px, 330px));
   place-items: center;
   list-style-type: none;
-  padding: 2%;
+  padding: 4rem;
   margin: 8rem auto 0 auto;
-  max-width: 1320px; /* ensures columns sit at 4, needs to be changed when contents of .single-box are changed */
+  max-width: 42rem; /* ensures columns sit at 4, needs to be changed when contents of .single-box are changed */
 }
 
 input {
@@ -39,18 +39,18 @@ input {
 
 .boxes .prod-card-top {
   display: inline-block;
-  color: white;
-  background-color:#404882;
+  color: black;
+  background-color: white;
   position: relative;
   text-align: center;
-  height:  100%;
+  height:  3rem;
   width: 100%;
-  border-radius: 6px 6px 0 0;
+  border-radius: 6px;
 }
 
 .boxes .prod-card-top:hover {
-  color: #2c3a41;
-  background-color: #e6e6e6;
+  color: white;
+  background-color: #8b8b8b;
 }
 
 .boxes .prod-card-top:active {
