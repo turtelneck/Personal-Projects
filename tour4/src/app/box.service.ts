@@ -5,7 +5,6 @@ import { Observable, of } from 'rxjs';
 import { catchError, map, tap } from 'rxjs/operators';
 
 import { Box } from './box';
-import { MessageService } from './message.service';
 
 
 @Injectable({ providedIn: 'root' })
@@ -17,9 +16,7 @@ export class BoxService {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };
 
-  constructor(
-    private http: HttpClient,
-    private messageService: MessageService) { }
+  constructor(private http: HttpClient) { }
 
   /** GET boxes from the server */
   getBoxes(): Observable<Box[]> {
@@ -116,8 +113,8 @@ export class BoxService {
     };
   }
 
-  /** Log a BoxService message with the MessageService */
+  /** Log a message to the console */
   private log(message: string) {
-    this.messageService.add(`BoxService: ${message}`);
+    console.log(`BoxService: ${message}`);
   }
 }

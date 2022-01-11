@@ -12,7 +12,6 @@ import { AppComponent } from './app.component';
 import { BoxDetailComponent } from './box-detail/box-detail.component';
 import { BoxesComponent } from './boxes/boxes.component';
 import { BoxSearchComponent } from './box-search/box-search.component';
-import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   imports: [
@@ -32,7 +31,6 @@ import { MessagesComponent } from './messages/messages.component';
     AppComponent,
     BoxesComponent,
     BoxDetailComponent,
-    MessagesComponent,
     BoxSearchComponent
   ],
   bootstrap: [ AppComponent ]
