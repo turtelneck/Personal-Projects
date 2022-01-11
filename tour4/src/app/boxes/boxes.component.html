@@ -3,7 +3,9 @@
 <div class="boxes">
   <div *ngFor="let box of boxes" class="single-box">
     <a routerLink="/detail/{{box.id}}">
-      <div class="title">{{box.name}}</div>
+      <div class="prod-card-top">
+        <span class="prod-card-title">{{box.name}}</span>
+      </div>
     </a>
     <a routerLink="/detail/{{box.id}}">
       <img src="{{box.imageAddress}}" alt="{{box.imageAltDescription}}">

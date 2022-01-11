@@ -1,4 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: PlayFairSC;
+    src: url(./assets/fonts/PlayfairDisplaySC-Regular.ttf) format("truetype");
+}
+
 body {
-	background-color: #acc4ef;
+	background: linear-gradient(
+		135deg,
+		rgba(145,255,140,.45) 0%,
+		rgba(220,155,255,.45) 100%
+	) no-repeat center center fixed;
 }
