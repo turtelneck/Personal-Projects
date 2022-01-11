@@ -1,6 +1,7 @@
 /* AppComponent's private CSS styles */
 h1 {
   margin-bottom: 0;
+  font-family: playFairSc;
 }
 nav a {
   padding: 1rem;
