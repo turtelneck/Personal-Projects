@@ -9,7 +9,6 @@ import { InMemoryDataService } from './in-memory-data.service';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { BoxDetailComponent } from './box-detail/box-detail.component';
 import { BoxesComponent } from './boxes/boxes.component';
 import { BoxSearchComponent } from './box-search/box-search.component';
@@ -31,7 +30,6 @@ import { MessagesComponent } from './messages/messages.component';
   ],
   declarations: [
     AppComponent,
-    DashboardComponent,
     BoxesComponent,
     BoxDetailComponent,
     MessagesComponent,
