@@ -1,8 +1,10 @@
 <div class="boxes">
-  <div *ngFor="let box of boxes" class="single-box">
+  <div *ngFor="let box of boxes" 
+    (mouseover)="pickGradient()" 
+    class="grid-card">
     <a routerLink="/detail/{{box.id}}">
-      <div class="prod-card-top">
-        <span class="prod-card-title">{{box.name}}</span>
+      <div class="product-card">
+        <span class="product-card-title">{{box.name}}</span>
       </div>
     </a>
   </div>

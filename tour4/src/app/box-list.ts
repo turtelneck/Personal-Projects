@@ -6,14 +6,14 @@
 const boxes: Box[] = [
     {
         id: 11, 
-        name: 'Stō Stacker, Mark II', 
+        name: 'Stō Stacker, Mk II', 
         weight: 7,
         imageAddress: 'assets/img/old-sto-L.jpg',
         imageAddressAltDescription: 'sto stacker mark ii'
     },
     {
         id: 12, 
-        name: 'Stō Stacker, Mark I', 
+        name: 'Stō Stacker, Mk I', 
         weight: 8,
         imageAddress: 'assets/img/old-sto-L.jpg',
         imageAddressAltDescription: 'sto stacker mark i'

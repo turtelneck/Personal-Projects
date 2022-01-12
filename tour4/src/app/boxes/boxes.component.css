@@ -2,10 +2,9 @@
 .boxes {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 330px));
-  place-items: center;
   list-style-type: none;
-  padding: 4rem;
-  margin: 8rem auto 0 auto;
+  padding: 0.6rem 0 1rem;
+  margin: 8rem auto 0 4rem;
   max-width: 42rem; /* ensures columns sit at 4, needs to be changed when contents of .single-box are changed */
 }
 
@@ -18,13 +17,13 @@ input {
   box-sizing: border-box;
 }
 
-.boxes .single-box {
+.boxes .grid-card {
   display: grid;
   grid-template-rows: 20% 1fr;
   position: relative;
   cursor: pointer;
   max-width:  319px;
-  padding: 15px 0px;
+  padding: 0 0 10px;
   width: 100%;
 }
 
@@ -34,33 +33,66 @@ input {
   background-color: #EEE;
   display: block;
   width: 100%;
-  border-radius: 4px;
 }
 
-.boxes .prod-card-top {
+.boxes .product-card {
   display: inline-block;
   color: black;
   background-color: white;
   position: relative;
   text-align: center;
-  height:  3rem;
+  height:  18rem;
   width: 100%;
-  border-radius: 6px;
+  border-radius: 0px;
 }
 
-.boxes .prod-card-top:hover {
+.boxes .product-card:hover {
+  --gradient1: linear-gradient(
+    135deg, 
+    rgba(145,255,140,0.65) 0%,
+    rgba(220,155,255,1) 90%
+  );
+  --gradient2: linear-gradient(
+    45deg,
+    rgba(120,255,255,.9) 10%,
+    rgba(128,255,123,0.65) 100%
+  );
+  --gradient3: linear-gradient(
+    70deg,
+    rgba(255,112,112,.6) 0%,
+    rgba(121,255,255,.8) 70%
+  );
+  --gradient4: linear-gradient(
+    25deg,
+    rgba(121,255,255,.8) 10%,
+    rgba(255,112,229,.6) 70%
+  );
+  --gradient5: linear-gradient(
+    110deg,
+    rgba(255,185,110,1) 0%,
+    rgba(190,120,255,1) 80%
+  );
+  --gradient6: linear-gradient(
+    15deg,
+    rgba(247,255,112,1) 0%,
+    rgba(121,211,255,1) 80%
+  );
+}
+
+.boxes .product-card:hover {
   color: white;
-  background-color: #8b8b8b;
+  background: var(--gradient6);
+  background-size: 180%;
 }
 
-.boxes .prod-card-top:active {
+.boxes .product-card:active {
   background-color: #525252;
   color: #fafafa;
 }
 
-.boxes .prod-card-title {
+.boxes .product-card-title {
   position: relative;
-  top: 8px;
+  top: 8rem;
   font-size: 26px;
   font-family: playFairSc;
 }

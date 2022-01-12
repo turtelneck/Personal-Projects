@@ -8,8 +8,8 @@ import { Box } from './box';
 export class InMemoryDataService implements InMemoryDbService {
   createDb() {
     const boxes: Box[] = [
-      { id: 11, name: 'Stō Stacker, Mark II', weight: 7, imageAddress: 'assets/img/old-sto-L.jpg', imageAltDescription: 'sto stacker mark ii' },
-      { id: 12, name: 'Stō Stacker, Mark I', weight: 8, imageAddress: 'assets/img/old-sto-L.jpg', imageAltDescription: 'sto stacker mark i' },
+      { id: 11, name: 'Stō Stacker, Mk II', weight: 7, imageAddress: 'assets/img/old-sto-L.jpg', imageAltDescription: 'sto stacker mark ii' },
+      { id: 12, name: 'Stō Stacker, Mk I', weight: 8, imageAddress: 'assets/img/old-sto-L.jpg', imageAltDescription: 'sto stacker mark i' },
       { id: 13, name: 'Big Stō', weight: 17, imageAddress: 'assets/img/old-sto-L.jpg', imageAltDescription: 'big sto box' },
       { id: 14, name: 'Big Big Stō', weight: 23, imageAddress: 'assets/img/old-sto-L.jpg', imageAltDescription: 'big big sto box' },
       { id: 15, name: 'Old Stō L', weight: 1, imageAddress: 'assets/img/old-sto-L.jpg', imageAltDescription: 'large cardboard box' },
