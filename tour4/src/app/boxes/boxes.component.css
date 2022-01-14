@@ -17,7 +17,6 @@ input {
 }
 
 .boxes .grid-card {
-  background-size: 400%;
   background: white;
   max-width:  319px;
   margin: 0 0 10px;

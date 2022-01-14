@@ -26,7 +26,7 @@ export class BoxesComponent implements OnInit {
   }
 
   pickGradient(): void {
-    this.gradient = `var(--gradient${this.getRandomInt(6).toString()})`;
+    this.gradient = `var(--gradient${this.getRandomInt(6).toString()}) center/180%`;
   }
 
   removeGradient(): void {
