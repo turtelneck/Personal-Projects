@@ -4,4 +4,5 @@ export interface Box {
   weight: number;
   imageAddress: string;
   imageAltDescription: string; // image alt description
+  // gradient: string // for css
 }

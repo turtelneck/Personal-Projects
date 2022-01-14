@@ -1,10 +1,12 @@
 <div class="boxes">
-  <div *ngFor="let box of boxes" 
-    (mouseover)="pickGradient()" 
-    class="grid-card">
+  <div *ngFor="let box of boxes" class="grid-card">
     <a routerLink="/detail/{{box.id}}">
-      <div class="product-card">
-        <span class="product-card-title">{{box.name}}</span>
+      <div 
+      [ngStyle]="{'background': gradient}" 
+      (mouseover)="pickGradient()"
+      (mouseleave)="removeGradient()"
+      class="product-card">
+        {{box.name}}
       </div>
     </a>
   </div>

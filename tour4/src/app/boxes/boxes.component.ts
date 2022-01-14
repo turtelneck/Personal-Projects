@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgStyle } from '@angular/common';
 
 import { Box } from '../box';
 import { BoxService } from '../box.service';
@@ -10,11 +11,13 @@ import { BoxService } from '../box.service';
 })
 export class BoxesComponent implements OnInit {
   boxes: Box[] = [];
+  gradient: string = '';
 
   constructor(private boxService: BoxService) { }
 
   ngOnInit(): void {
     this.getBoxes();
+    this.gradient = 'var(--gradient1)';
   }
 
   getBoxes(): void {
@@ -22,12 +25,15 @@ export class BoxesComponent implements OnInit {
     .subscribe(boxes => this.boxes = boxes);
   }
 
-  // add(name: string, weight: number): void {
-  //   name = name.trim();
-  //   if (!name || !weight) { return; }
-  //   this.boxService.addBox({ name, weight } as Box)
-  //     .subscribe(box => {
-  //       this.boxes.push(box);
-  //     });
-  // }
+  pickGradient(): void {
+    this.gradient = `var(--gradient${this.getRandomInt(6).toString()})`;
+  }
+
+  removeGradient(): void {
+    this.gradient = 'white';
+  }
+
+  getRandomInt(max: number): number {
+    return Math.floor(Math.random() * max);
+  }
 }
