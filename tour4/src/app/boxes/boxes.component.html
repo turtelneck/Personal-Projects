@@ -1,13 +1,26 @@
-<div class="boxes">
-  <div *ngFor="let box of boxes" class="grid-card">
-    <a routerLink="/detail/{{box.id}}">
-      <div 
-      [ngStyle]="{'background': gradient}" 
-      (mouseover)="pickGradient()"
-      (mouseleave)="removeGradient()"
-      class="product-card">
-        {{box.name}}
-      </div>
-    </a>
+<div class="grid-container">
+  
+  <div class="box-cards">
+    <div *ngFor="let box of boxes" class="grid-card">
+      <a routerLink="/detail/{{box.id}}">
+        <div 
+        [ngStyle]="{'background': gradient}" 
+        (mouseover)="pickGradient(box.id)"
+        (mouseleave)="removeGradient()"
+        class="product-card">
+          {{box.name}}
+        </div>
+      </a>
+    </div>
   </div>
+
+  <div class="box-img-container">
+    <div *ngFor="let box of boxes; let i = index"
+    [attr.data-index]="i"
+    class="box-img-container">
+      <img [style.display]="(i == selectedBox) ? 'block' : 'none'"
+      src="{{box.imageAddress}}">
+    </div>
+  </div>
+  
 </div>

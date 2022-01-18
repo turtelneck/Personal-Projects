@@ -1,22 +1,18 @@
-/* BoxesComponent's private CSS styles */
-.boxes {
+/* boxes.Component's private CSS styles */
+.grid-container {
+  display: grid;
+  grid-template-columns: 46rem 1fr;
+}
+
+.box-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(288px, 330px));
   padding: 0.6rem 0 1rem;
   margin: 8rem auto 0 4rem;
-  max-width: 42rem; /* ensures columns sit at 4, needs to be changed when contents of .single-box are changed */
+  max-width: 42rem; /* ensures columns sit at 2, needs to be changed when contents of .grid-card are changed */
 }
 
-input {
-  display: block;
-  max-width: 400px;
-  width: 100%;
-  padding: .5rem;
-  margin: 1rem 0;
-  box-sizing: border-box;
-}
-
-.boxes .grid-card {
+.box-cards .grid-card {
   background: white;
   max-width:  319px;
   margin: 0 0 10px;
@@ -28,20 +24,20 @@ input {
   font-family: playFairSc;
 }
 
-/.boxes a {
+.box-cards a {
   color: #333;
   text-decoration: none;
   display: block;
   width: 100%;
 }
 
-.boxes .product-card {
+.box-cards .product-card {
   display: inline-block;
   color: black;
   width: 100%;
 }
 
-.boxes .product-card:hover {
+.box-cards .product-card:hover {
   --gradient0: linear-gradient(
     135deg, 
     rgba(145,255,140,0.65) 0%,
@@ -74,22 +70,27 @@ input {
   );
 }
 
-.boxes .product-card:hover {
+.box-cards .product-card:hover {
   color: white;
 }
 
-.boxes .product-card:active {
+.box-cards .product-card:active {
   background-color: #525252;
   color: #fafafa;
 }
 
-.add-button {
- padding: .5rem 1.5rem;
- font-size: 1rem;
- margin-bottom: 2rem;
+.box-img-container {
+  position: fixed;
+  top:  29rem;
+  left:  30rem;
 }
 
-.add-button:hover {
-  color: white;
-  background-color: #42545C;
-}
+
+TODO: make image appear in center of left column while dynamically re-sizing. 
+I'll need to write an expression in the ngFor that creates each div. something like:
+left: widthOfLeftColumn + thirtyPercentOfRightColumn
+
+I'll have to modify the max-width property of the image so that when the page shrinks, the image shrinks with it. 
+I'll have to use images of proper size and simplicity so that this doesn't look terrible.
+
+I'll also have to modify the max-width property of the grid column so that the image disappears after the page reaches a certain size
