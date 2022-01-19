@@ -1,21 +1,18 @@
 /* boxes.Component's private CSS styles */
 .grid-container {
   display: grid;
-  grid-template-columns: 46rem 1fr;
 }
 
 .box-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(288px, 330px));
-  padding: 0.6rem 0 1rem;
-  margin: 8rem auto 0 4rem;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); /* needs to be changed if I ever change font-size */
+  grid-gap: 1rem;
+  margin:  9rem 8vw auto 8vw;
   max-width: 42rem; /* ensures columns sit at 2, needs to be changed when contents of .grid-card are changed */
 }
 
 .box-cards .grid-card {
   background: white;
-  max-width:  319px;
-  margin: 0 0 10px;
 
   /* for the text */
   text-align: center;
@@ -27,14 +24,10 @@
 .box-cards a {
   color: #333;
   text-decoration: none;
-  display: block;
-  width: 100%;
 }
 
 .box-cards .product-card {
-  display: inline-block;
   color: black;
-  width: 100%;
 }
 
 .box-cards .product-card:hover {
@@ -86,7 +79,7 @@
 }
 
 
-TODO: make image appear in center of left column while dynamically re-sizing. 
+/*TODO: make image appear in center of left column while dynamically re-sizing. 
 I'll need to write an expression in the ngFor that creates each div. something like:
 left: widthOfLeftColumn + thirtyPercentOfRightColumn
 
@@ -94,3 +87,6 @@ I'll have to modify the max-width property of the image so that when the page sh
 I'll have to use images of proper size and simplicity so that this doesn't look terrible.
 
 I'll also have to modify the max-width property of the grid column so that the image disappears after the page reaches a certain size
+*/
+
+
