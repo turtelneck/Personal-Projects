@@ -79,7 +79,9 @@
 }
 
 
-/*TODO: make image appear in center of left column while dynamically re-sizing. 
+/*
+
+TODO: make image appear in center of left column while dynamically re-sizing. 
 I'll need to write an expression in the ngFor that creates each div. something like:
 left: widthOfLeftColumn + thirtyPercentOfRightColumn
 
@@ -87,6 +89,17 @@ I'll have to modify the max-width property of the image so that when the page sh
 I'll have to use images of proper size and simplicity so that this doesn't look terrible.
 
 I'll also have to modify the max-width property of the grid column so that the image disappears after the page reaches a certain size
-*/
 
+TODO: Do media queries. something like:
+
+@media {
+  (min-width: 825px) {
+    .box-cards {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(16rem, 1fr));
+    }
+  }
+}
+
+*/
 
