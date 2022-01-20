@@ -40,15 +40,22 @@
 /* when the page gets only wide enough to contain 2 columns,
  * I want those columns to auto-fill all space available.
  */
-@media (min-width: 825px) {
+@media (min-width: 826px) {
   .box-cards {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(16rem, 1fr));
+    max-width: 42rem; /* ensures columns sit at 2, needs to be changed when contents of `.grid-card {grid-template-columns}` are changed */
+  }
+}
+
+@media (max-width: 825px) {
+  .box-cards {
+    max-width: none; /* ensures columns begin to for  */
   }
 }
 
 
 
+
+/* the rest */
 .grid-container {
   display: grid;
 }
@@ -58,7 +65,6 @@
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); /* needs to be changed if I ever change font-size */
   grid-gap: 1rem;
   margin:  9rem 8vw auto 8vw;
-  max-width: 42rem; /* ensures columns sit at 2, needs to be changed when contents of .grid-card are changed */
 }
 
 .box-cards .grid-card {
@@ -79,7 +85,6 @@
 .box-cards .product-card {
   color: black;
 }
-
 
 .box-cards .product-card:hover {
   color: white;
