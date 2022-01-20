@@ -1,35 +1,9 @@
 /* boxes.Component's private CSS styles */
-.grid-container {
-  display: grid;
-}
 
-.box-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); /* needs to be changed if I ever change font-size */
-  grid-gap: 1rem;
-  margin:  9rem 8vw auto 8vw;
-  max-width: 42rem; /* ensures columns sit at 2, needs to be changed when contents of .grid-card are changed */
-}
-
-.box-cards .grid-card {
-  background: white;
-
-  /* for the text */
-  text-align: center;
-  line-height: 288px; 
-  font-size: 26px;
-  font-family: playFairSc;
-}
-
-.box-cards a {
-  color: #333;
-  text-decoration: none;
-}
-
-.box-cards .product-card {
-  color: black;
-}
-
+/* housekeeping stuff
+ * --gradient list, to be replaced at some point with randomizer?
+ * --@media queries to ensure control of dynamic design
+ */
 .box-cards .product-card:hover {
   --gradient0: linear-gradient(
     135deg, 
@@ -62,6 +36,50 @@
     rgba(121,211,255,1) 80%
   );
 }
+
+/* when the page gets only wide enough to contain 2 columns,
+ * I want those columns to auto-fill all space available.
+ */
+@media (min-width: 825px) {
+  .box-cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(16rem, 1fr));
+  }
+}
+
+
+
+.grid-container {
+  display: grid;
+}
+
+.box-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); /* needs to be changed if I ever change font-size */
+  grid-gap: 1rem;
+  margin:  9rem 8vw auto 8vw;
+  max-width: 42rem; /* ensures columns sit at 2, needs to be changed when contents of .grid-card are changed */
+}
+
+.box-cards .grid-card {
+  background: white;
+
+  /* for the text */
+  text-align: center;
+  line-height: 288px; 
+  font-size: 26px;
+  font-family: playFairSc;
+}
+
+.box-cards a {
+  color: #333;
+  text-decoration: none;
+}
+
+.box-cards .product-card {
+  color: black;
+}
+
 
 .box-cards .product-card:hover {
   color: white;
