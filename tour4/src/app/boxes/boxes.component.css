@@ -53,8 +53,6 @@
 }
 
 
-
-
 /* the rest */
 .grid-container {
   display: grid;
@@ -97,8 +95,8 @@
 
 .box-img-container {
   position: fixed;
-  top:  29rem;
-  left:  30rem;
+  top:  30rem;
+  left:  52rem;
 }
 
 
