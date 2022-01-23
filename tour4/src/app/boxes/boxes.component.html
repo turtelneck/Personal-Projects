@@ -1,7 +1,7 @@
 <div class="grid-container">
   
-  <div class="box-cards">
-    <div *ngFor="let box of boxes" class="grid-card">
+  <div class="card-grid">
+    <div *ngFor="let box of boxes" class="card">
       <a routerLink="/detail/{{box.id}}">
         <div 
         [ngStyle]="{'background': gradient}" 
@@ -14,13 +14,11 @@
     </div>
   </div>
 
-  <div class="box-img-container">
-    <div *ngFor="let box of boxes; let i = index"
-    [attr.data-index]="i"
-    class="box-img-container">
-      <img [style.display]="(i == selectedBox) ? 'block' : 'none'"
-      src="{{box.imageAddress}}">
-    </div>
+  <div class="img-container">
+    <img *ngFor="let box of boxes; let i = index"
+    [attr.data-index]="i" 
+    [style.display]="(i == selectedBox) ? 'block' : 'none'"
+    src="{{box.imageAddress}}">
   </div>
   
 </div>

@@ -4,7 +4,7 @@
  * --gradient list, to be replaced at some point with randomizer?
  * --@media queries to ensure control of dynamic design
  */
-.box-cards .product-card:hover {
+.card-grid .product-card:hover {
   --gradient0: linear-gradient(
     135deg, 
     rgba(145,255,140,0.65) 0%,
@@ -41,13 +41,13 @@
  * I want those columns to auto-fill all space available.
  */
 @media (min-width: 826px) {
-  .box-cards {
-    max-width: 42rem; /* ensures columns sit at 2, needs to be changed when contents of `.grid-card {grid-template-columns}` are changed */
+  .card-grid {
+    max-width: 42rem; /* ensures columns sit at 2, needs to be changed when contents of `.card {grid-template-columns}` are changed */
   }
 }
 
 @media (max-width: 825px) {
-  .box-cards {
+  .card-grid {
     max-width: none; /* ensures columns begin to for  */
   }
 }
@@ -58,14 +58,14 @@
   display: grid;
 }
 
-.box-cards {
+.card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); /* needs to be changed if I ever change font-size */
   grid-gap: 1rem;
   margin:  9rem 8vw auto 8vw;
 }
 
-.box-cards .grid-card {
+.card-grid .card {
   background: white;
 
   /* for the text */
@@ -75,28 +75,35 @@
   font-family: playFairSc;
 }
 
-.box-cards a {
+.card-grid a {
   color: #333;
   text-decoration: none;
 }
 
-.box-cards .product-card {
+.card-grid .product-card {
   color: black;
 }
 
-.box-cards .product-card:hover {
+.card-grid .product-card:hover {
   color: white;
 }
 
-.box-cards .product-card:active {
+.card-grid .product-card:active {
   background-color: #525252;
   color: #fafafa;
 }
 
-.box-img-container {
+.img-container {
+/*  max-width: 100%;
+  height: auto;*/
   position: fixed;
-  top:  30rem;
+  top:  9rem;
   left:  52rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 
@@ -110,17 +117,6 @@ I'll have to modify the max-width property of the image so that when the page sh
 I'll have to use images of proper size and simplicity so that this doesn't look terrible.
 
 I'll also have to modify the max-width property of the grid column so that the image disappears after the page reaches a certain size
-
-TODO: Do media queries. something like:
-
-@media {
-  (min-width: 825px) {
-    .box-cards {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(16rem, 1fr));
-    }
-  }
-}
 
 */
 
