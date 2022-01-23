@@ -98,25 +98,19 @@
   height: auto;*/
   position: fixed;
   top:  9rem;
-  left:  52rem;
+  left:  calc(8vw + 43rem);
 }
 
 img {
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
+  margin: auto;
 }
 
 
 /*
 
-TODO: make image appear in center of left column while dynamically re-sizing. 
-I'll need to write an expression in the ngFor that creates each div. something like:
-left: widthOfLeftColumn + thirtyPercentOfRightColumn
-
-I'll have to modify the max-width property of the image so that when the page shrinks, the image shrinks with it. 
-I'll have to use images of proper size and simplicity so that this doesn't look terrible.
-
-I'll also have to modify the max-width property of the grid column so that the image disappears after the page reaches a certain size
+TODO: after image is forced past minimum height of 288px, make images disappear from right column nad appear in each product card
 
 */
 
