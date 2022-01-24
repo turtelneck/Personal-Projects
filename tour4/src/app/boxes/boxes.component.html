@@ -16,7 +16,7 @@
 
   <div class="img-container">
     <img *ngFor="let box of boxes; let i = index"
-    [attr.data-index]="i" 
+    [attr.data-index]="i"
     [style.display]="(i == selectedBox) ? 'block' : 'none'"
     src="{{box.imageAddress}}">
   </div>
