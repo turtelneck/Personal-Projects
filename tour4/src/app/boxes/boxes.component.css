@@ -52,8 +52,6 @@
   }
 }
 
-
-/* the rest */
 .grid-container {
   display: grid;
 }
@@ -93,12 +91,33 @@
   color: #fafafa;
 }
 
-.img-container {
-/*  max-width: 100%;
-  height: auto;*/
+/* when the page gets too small for images to be 
+ * taller than 288px (taller than the card),
+ * they should no longer display. 
+ * they are banished to an abosolute position off the page!
+ */
+@media (min-width: 1230px) {
+  .img-container {
+    position: fixed;
+    top:  calc(9rem + 18vw);
+    left:  calc(8vw + 43rem);
+  }
+}
+
+@media (max-width: 1229px) {
+  .img-container {
+    position: absolute;
+    left: 5000px;
+  }
+}
+
+.img-container-bg {
   position: fixed;
-  top:  9rem;
-  left:  calc(8vw + 43rem);
+  left: calc(8vw + 43rem);
+  max-width: 100%;
+/*  width: calc(90% - 43rem);*/
+  height: 100vw;
+  background-color: gray;
 }
 
 img {
@@ -106,11 +125,3 @@ img {
   height: auto;
   margin: auto;
 }
-
-
-/*
-
-TODO: after image is forced past minimum height of 288px, make images disappear from right column nad appear in each product card
-
-*/
-
