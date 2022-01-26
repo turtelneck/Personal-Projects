@@ -14,13 +14,14 @@
     </div>
   </div>
 
-  <div class="img-container">
+  <div class="img-container"
+  [style.display]="(selectedBox != -1) ? 'block' : 'none'">
     <div class="img-container-bg"></div>
     <img *ngFor="let box of boxes; let i = index"
     [attr.data-index]="i"
     [style.display]="(i == selectedBox) ? 'block' : 'none'"
     src="{{box.imageAddress}}">
   </div>
-  
+
 
 </div>

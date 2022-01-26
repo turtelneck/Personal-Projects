@@ -14,7 +14,6 @@ export class BoxesComponent implements OnInit {
   
   // properties for css
   gradient: string = '';
-  displayType: string = 'none';
   selectedBox: number = -1;
 
   constructor(private boxService: BoxService) { }

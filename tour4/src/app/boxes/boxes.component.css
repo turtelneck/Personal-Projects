@@ -97,14 +97,23 @@
  * they are banished to an abosolute position off the page!
  */
 @media (min-width: 1230px) {
+  .img-container-bg,
   .img-container {
     position: fixed;
-    top:  calc(9rem + 18vw);
     left:  calc(8vw + 43rem);
+  }
+
+  .img-container-bg {
+    top: 9rem;
+  }
+
+  .img-container {
+    top:  calc(9rem + 21vh);
   }
 }
 
 @media (max-width: 1229px) {
+  .img-container-bg,
   .img-container {
     position: absolute;
     left: 5000px;
@@ -112,12 +121,12 @@
 }
 
 .img-container-bg {
-  position: fixed;
-  left: calc(8vw + 43rem);
-  max-width: 100%;
-/*  width: calc(90% - 43rem);*/
-  height: 100vw;
   background-color: gray;
+  max-width: 100%;
+  width: 45vw;
+  height: 86vh;
+  margin: auto;
+  z-index: -1;
 }
 
 img {
