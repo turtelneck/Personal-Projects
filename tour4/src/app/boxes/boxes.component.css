@@ -96,41 +96,29 @@
  * they should no longer display. 
  * they are banished to an abosolute position off the page!
  */
-@media (min-width: 1230px) {
-  .img-container-bg,
+@media (min-width: 1221px) {
   .img-container {
     position: fixed;
     left:  calc(8vw + 43rem);
-  }
-
-  .img-container-bg {
-    top: 9rem;
-  }
-
-  .img-container {
-    top:  calc(9rem + 21vh);
+    top:  9rem;
   }
 }
 
-@media (max-width: 1229px) {
-  .img-container-bg,
+@media (max-width: 1222px) {
   .img-container {
     position: absolute;
     left: 5000px;
   }
 }
 
-.img-container-bg {
-  background-color: gray;
-  max-width: 100%;
-  width: 45vw;
-  height: 86vh;
-  margin: auto;
-  z-index: -1;
+.img-container {
+  max-width: 100vw;
+  width: calc(100vw - 51rem);
 }
 
 img {
-  max-width: 90%;
+  position: relative;
+  width: 95%;
   height: auto;
   margin: auto;
 }
