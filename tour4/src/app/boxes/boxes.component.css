@@ -59,13 +59,12 @@
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); /* needs to be changed if I ever change font-size */
-  grid-gap: 1rem;
   margin:  9rem 8vw auto 8vw;
 }
 
 .card-grid .card {
   background: white;
-
+  border: 2px gray;
   /* for the text */
   text-align: center;
   line-height: 288px; 
@@ -80,6 +79,7 @@
 
 .card-grid .product-card {
   color: black;
+/*  border: solid 2px gray;*/
 }
 
 .card-grid .product-card:hover {
@@ -104,7 +104,7 @@
   }
 }
 
-@media (max-width: 1222px) {
+@media (max-width: 1222 px) {
   .img-container {
     position: absolute;
     left: 5000px;
@@ -112,12 +112,16 @@
 }
 
 .img-container {
-  max-width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-content: center;
   width: calc(100vw - 51rem);
+  height: calc(100vh - 10rem);
 }
 
 img {
-  position: relative;
+  max-width: 725px;
+  max-height: 725px;
   width: 95%;
   height: auto;
   margin: auto;

@@ -8,14 +8,14 @@ import { Box } from './box';
 export class InMemoryDataService implements InMemoryDbService {
   createDb() {
     const boxes: Box[] = [
-      { id: 10, name: 'Stō Stacker, Mk II', weight: 7, imageAddress: 'assets/img/sto-stacker-mark-ii.jpg', imageAltDescription: 'sto stacker mark ii' },
-      { id: 11, name: 'Stō Stacker, Mk I', weight: 8, imageAddress: 'assets/img/sto-stacker-mark-i.jpg', imageAltDescription: 'sto stacker mark i' },
-      { id: 12, name: 'Big Stō', weight: 17, imageAddress: 'assets/img/old-sto-L.jpg', imageAltDescription: 'big sto box' },
-      { id: 13, name: 'Big Big Stō', weight: 23, imageAddress: 'assets/img/old-sto-L.jpg', imageAltDescription: 'big big sto box' },
-      { id: 14, name: 'Old Stō L', weight: 1, imageAddress: 'assets/img/old-sto-L.jpg', imageAltDescription: 'large cardboard box' },
-      { id: 15, name: 'Old Stō M', weight: 1, imageAddress: 'assets/img/old-sto-M.jpg', imageAltDescription: 'medium cardboard box' },
-      { id: 16, name: 'Old Stō S', weight: 1, imageAddress: 'assets/img/old-sto-S.jpeg', imageAltDescription: 'small cardboard box' },
-      { id: 17, name: 'Stō Zerō', weight: 0, imageAddress: 'assets/img/old-sto-L.jpg', imageAltDescription: 'sto zero box' }
+      { id: 10, name: 'Stō Preem, Mk I', imageAddress: 'assets/img/sto-preem-mk-1.jpg', imageAltDescription: 'stō preem mk i' },
+      { id: 11, name: 'Stō Preem Lite', imageAddress: 'assets/img/sto-preem-lite.jpg', imageAltDescription: 'stō preem lite' },
+      { id: 12, name: 'Cargo Stō', imageAddress: 'assets/img/cargo-sto.jpg', imageAltDescription: 'cargo sto' },
+      { id: 13, name: 'Card Stō', imageAddress: 'assets/img/card-sto.jpg', imageAltDescription: 'card sto' },
+      { id: 14, name: 'Scrapwood Stō', imageAddress: 'assets/img/scrapwood-sto.jpg', imageAltDescription: 'scrapwood sto' },
+      { id: 15, name: 'Scrap Stō', imageAddress: 'assets/img/scrap-sto.jpg', imageAltDescription: 'scrap sto' },
+      { id: 16, name: 'Treasure Stō', imageAddress: 'assets/img/treasure-sto.jpg', imageAltDescription: 'treasure sto' },
+      { id: 17, name: 'Wally', imageAddress: 'assets/img/wally.jpg', imageAltDescription: 'wally' }
     ];
     return {boxes};
   }
