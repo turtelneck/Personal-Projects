@@ -1,18 +1,8 @@
 /* AppComponent's private CSS styles */
-@media (max-width: 585px) {
-  .title {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media (min-width: 586px) {
-  .title {
-    margin-left: 12rem;
-  }
-}
 
 .header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   position: fixed;
   top: 0;
   height: 8rem;
@@ -21,16 +11,9 @@
   z-index: 1;
 }
 
-h1 {
-  margin-bottom: 0;
-  font-family: playFairSc;
-}
-
 .title {
-  position: relative;
-  margin-top: 3rem;
-  width: 200px;
-  font-size: 32px;
+  text-align: center;
+  font-size: 38px;
   font-family: 'playFairSc';
 }
 

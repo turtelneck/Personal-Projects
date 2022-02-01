@@ -1,19 +1,25 @@
 /* HeroSearch private styles */
+#search-component {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  max-width: 38rem;
+  height: 8rem;
+}
 
 label {
-  display: block;
-  font-weight: bold;
-  font-size: 1.2rem;
-  margin-top: 1rem;
-  margin-bottom: .5rem;
-
+  font-family: monospace;
+  padding: 0px 8px;
+  font-size: 30px;
+  height: 35px;
 }
+
 input {
+  margin: auto;
   padding: .5rem;
-  width: 100%;
-  max-width: 600px;
+  width: 90%;
   box-sizing: border-box;
-  display: block;
 }
 
 input:focus {
@@ -29,7 +35,6 @@ li {
   border-right: 1px solid gray;
   display: inline-block;
   width: 100%;
-  max-width: 600px;
   padding: .5rem;
   box-sizing: border-box;
   text-decoration: none;
