@@ -2,19 +2,24 @@
 
 .header {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(20rem, auto) 1fr;
   position: fixed;
-  top: 0;
-  height: 8rem;
   width: 100vw;
   background-color: white;
   z-index: 1;
 }
 
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .title {
   text-align: center;
-  font-size: 38px;
+  font-size: 40px;
   font-family: 'playFairSc';
+  max-width: 20rem;
 }
 
 nav a {
