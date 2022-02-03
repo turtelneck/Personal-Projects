@@ -1,6 +1,7 @@
 <div id="search-component">
-  <label for="search-box">SEARCH</label>
-  <input #searchBox id="search-box" (input)="search(searchBox.value)" />
+  <input #searchBox id="search-box"
+  (input)="search(searchBox.value)"
+  placeholder="Search" />
 
   <ul class="search-result">
     <li *ngFor="let box of boxes$ | async" >
