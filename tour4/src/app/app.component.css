@@ -1,29 +1,5 @@
 /* AppComponent's private CSS styles */
 
-.header {
-  display: grid;
-  grid-template-columns: minmax(20rem, auto) 1fr;
-  position: fixed;
-  width: 100vw;
-  background-color: white;
-  z-index: 1;
-}
-
-.title-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.title {
-  position: relative;
-  top: -1px;
-  text-align: center;
-  font-size: 40px;
-  font-family: 'playFairSc';
-  max-width: 8rem;
-}
-
 nav a {
   padding: 1rem;
   text-decoration: none;

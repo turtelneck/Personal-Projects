@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 import { Observable, Subject } from 'rxjs';
 
 import {
@@ -15,6 +14,8 @@ import { BoxService } from '../box.service';
   styleUrls: [ './box-search.component.css' ]
 })
 export class BoxSearchComponent implements OnInit {
+  title = 'Stack & Stō';
+  
   boxes$!: Observable<Box[]>;
   private searchTerms = new Subject<string>();
 

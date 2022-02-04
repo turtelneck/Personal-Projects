@@ -1,4 +1,42 @@
 /* HeroSearch private styles */
+
+/*@media (min-width: 826px) {
+  .card-grid {
+    max-width: 42rem;
+  }
+}
+
+@media (max-width: 825px) {
+  .search-component {
+    max-width: none;
+  }
+}*/
+
+.header {
+  display: grid;
+  grid-template-columns: minmax(20rem, auto) 1fr;
+  position: fixed;
+  width: 100vw;
+  background-color: white;
+  z-index: 1;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  position: relative;
+  top: -4px;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'playFairSc';
+  line-height: 44px;
+  max-width: 8rem;
+}
+
 #search-component {
   display: flex;
   align-items: center;
