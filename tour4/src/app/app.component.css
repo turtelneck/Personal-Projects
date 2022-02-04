@@ -16,10 +16,12 @@
 }
 
 .title {
+  position: relative;
+  top: -1px;
   text-align: center;
   font-size: 40px;
   font-family: 'playFairSc';
-  max-width: 20rem;
+  max-width: 8rem;
 }
 
 nav a {
