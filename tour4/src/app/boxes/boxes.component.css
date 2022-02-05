@@ -91,30 +91,27 @@
   color: #fafafa;
 }
 
-/* when the page gets too small for images to be 
- * taller than 288px (taller than the card),
- * they should no longer display. 
- * they are banished to an abosolute position off the page!
+/* When the page gets too small for images to be taller
+ * than the card (288px), they will no longer display. 
  */
-@media (min-width: 1221px) {
+@media (min-width: 1222px) {
   .img-container {
-    position: fixed;
-    left:  calc(8vw + 43rem);
-    top:  9rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-content: center;
   }
 }
 
-@media (max-width: 1222 px) {
+@media (max-width: 1221px) {
   .img-container {
-    position: absolute;
-    left: 5000px;
+    display: none;
   }
 }
 
 .img-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  place-content: center;
+  position: fixed;
+  left:  calc(8vw + 43rem);
+  top:  9rem;
   width: calc(100vw - 51rem);
   height: calc(100vh - 10rem);
 }
