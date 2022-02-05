@@ -8,7 +8,10 @@
         (mouseover)="pickGradient(box.id)"
         (mouseleave)="removeGradient()"
         class="product-card">
-          {{box.name}}
+
+          <img class="card-img" src="{{box.imageAddress}}" alt="{{box.imageAltDescription}}">
+          <span class="card-title">{{box.name}}</span>
+        
         </div>
       </a>
     </div>

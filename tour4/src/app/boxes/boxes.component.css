@@ -60,39 +60,43 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); /* needs to be changed if I ever change font-size */
   margin:  9rem 8vw auto 8vw;
+  padding-bottom: 1rem;
 }
 
-.card-grid .card {
+.card {
   background: white;
   border: 2px gray;
-  /* for the text */
-  text-align: center;
-  line-height: 288px; 
-  font-size: 26px;
-  font-family: playFairSc;
+  max-height: 288px;
 }
 
-.card-grid a {
+a {
   color: #333;
   text-decoration: none;
 }
 
-.card-grid .product-card {
-  color: black;
+.product-card {
+  max-height: 288px;
 /*  border: solid 2px gray;*/
 }
 
-.card-grid .product-card:hover {
-  color: white;
-}
-
-.card-grid .product-card:active {
+.product-card:active {
   background-color: #525252;
   color: #fafafa;
 }
 
+.card-title {
+  display: block;
+  font-family: playFairSc;
+  text-align: center;
+  font-size: 26px;
+  line-height: 288px;
+  margin: auto;
+}
+
+/* ---image logic--- */
+
 /* When the page gets too small for images to be taller
- * than the card (288px), they will no longer display. 
+ * than the card (288px), they will display in the cards
  */
 @media (min-width: 1222px) {
   .img-container {
@@ -100,12 +104,41 @@
     grid-template-columns: 1fr;
     place-content: center;
   }
+  .card-img {
+    display: none;
+  }
+  .product-card {
+    color: black;
+  }
+  .product-card:hover {
+    color: white;
+  }
 }
 
 @media (max-width: 1221px) {
   .img-container {
     display: none;
   }
+  .card-img {
+    display: block;
+  }
+  .card-title {
+    position: relative;
+    top: -288px;
+    background: #36363680;
+  }
+  .product-card {
+    color: white;
+  }
+  .product-card:hover {
+    color: greenyellow;
+  }
+}
+
+.card-img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 288px;
 }
 
 .img-container {
