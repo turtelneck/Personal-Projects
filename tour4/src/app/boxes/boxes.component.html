@@ -1,22 +1,18 @@
-<div class="grid-container">
-  
-  <div class="card-grid">
-    <div *ngFor="let box of boxes" class="card">
-      <a routerLink="/detail/{{box.id}}">
-        <div 
-        [ngStyle]="{'background': gradient}" 
-        (mouseover)="pickGradient(box.id)"
-        (mouseleave)="removeGradient()"
-        class="product-card">
+<div class="card-grid">
+  <div *ngFor="let box of boxes" class="card">
+    <a routerLink="/detail/{{box.id}}">
+      <div 
+      [ngStyle]="{'background': gradient}" 
+      (mouseover)="pickGradient(box.id)"
+      (mouseleave)="removeGradient()"
+      class="product-card">
 
-          <img class="card-img" src="{{box.imageAddress}}" alt="{{box.imageAltDescription}}">
-          <span class="card-title">{{box.name}}</span>
-        
-        </div>
-      </a>
-    </div>
+        <img class="card-img" src="{{box.imageAddress}}" alt="{{box.imageAltDescription}}">
+        <span class="card-title">{{box.name}}</span>
+      
+      </div>
+    </a>
   </div>
-
 </div>
 
 <div class="img-container">

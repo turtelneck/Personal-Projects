@@ -52,14 +52,11 @@
   }
 }
 
-.grid-container {
-  display: grid;
-}
-
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); /* needs to be changed if I ever change font-size */
-  margin:  9rem 8vw auto 8vw;
+  margin:  auto 8vw auto 8vw;
+  padding-top: 9rem;
   padding-bottom: 1rem;
 }
 

@@ -67,9 +67,7 @@ li {
 }
 
 .search-result li a {
-  border-bottom: 1px solid gray;
-  border-left: 1px solid gray;
-  border-right: 1px solid gray;
+  border: 1px solid gray;
   display: inline-block;
   width: 100%;
   padding: .5rem;
