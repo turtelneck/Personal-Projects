@@ -2,9 +2,8 @@
 
 @media (min-width: 630px) {
   .header {
-    grid-template-columns: minmax(20rem, auto) 1fr;
+    grid-template-columns: 9vw minmax(20rem, auto) 1fr;
   }
-
   #search-component {
     display: flex;
   }
@@ -14,8 +13,10 @@
   .header {
     grid-template-columns: 100vw;
   }
-
   #search-component {
+    display: none;
+  }
+  #empty-space {
     display: none;
   }
 }
@@ -38,7 +39,6 @@
 .title {
   position: relative;
   top: -4px;
-  text-align: center;
   font-size: 40px;
   font-family: 'playFairSc';
   line-height: 44px;

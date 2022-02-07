@@ -56,16 +56,16 @@ export class BoxService {
       // if not search term, return empty box array.
       return of([]);
     }
-    return this.http.get<Box[]>(`${this.boxesUrl}/?name=${term}`).pipe(
+    return this.http.get<Box[]>(`${this.boxesUrl}/?search=${term}`).pipe(
       tap(x => x.length ?
-         this.log(`found boxes matching "${term}"`) :
+         this.log(`found box matching "${term}"`) :
          this.log(`no boxes matching "${term}"`)),
       catchError(this.handleError<Box[]>('searchBoxes', []))
     );
   }
 
   // //////// Save methods ////////// 
-  // // ! NOT CURRENTLY IN USE !!!!!!
+  // !!!! NOT CURRENTLY IN USE !!!!!!
 
   // /** POST: add a new box to the server */
   // addBox(box: Box): Observable<Box> {
