@@ -4,6 +4,10 @@ a,div,img,span {
   border-radius: inherit;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* update border-radius attribute when single column */
 @media (min-width: 630px) {
   #card0 {
@@ -97,10 +101,6 @@ a,div,img,span {
   max-height: 288px;
 }
 
-a {
-  color: #333;
-  text-decoration: none;
-}
 
 .product-card {
   max-height: 288px;
@@ -120,13 +120,27 @@ a {
 .card-title {
   display: block;
   position: relative;
-  top: -288px;
   background: #36363680;
   font-family: playFairSc;
   text-align: center;
   font-size: 26px;
   line-height: 288px;
   margin: auto;
+  z-index: 1;
+}
+
+.card-img {
+  display: block;
+  position: relative;
+  top: -288px;
+  width: 100%;
+  object-fit: cover;
+  max-height: 288px;
+  z-index: 0;
+}
+
+.card-title:hover + .card-img {
+  filter: blur(5px);
 }
 
 /* When the page gets small enough, 
@@ -146,7 +160,6 @@ a {
   }
 }
 
-
 .img-container {
   position: fixed;
   left:  calc(8vw + 43rem);
@@ -154,13 +167,6 @@ a {
   width: calc(100vw - 51rem);
   height: calc(100vh - 10rem);
   border-radius: 6px;
-}
-
-.card-img {
-  display: block;
-  width: 100%;
-  object-fit: cover;
-  max-height: 288px;
 }
 
 img {
