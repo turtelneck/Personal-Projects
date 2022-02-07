@@ -41,7 +41,7 @@ export class BoxesComponent implements OnInit {
 
   offHover(): void {
     // remove gradient
-    this.gradient = 'white';
+    // this.gradient = 'white';
     // hide image
     this.selectedBox = -1;
   }
