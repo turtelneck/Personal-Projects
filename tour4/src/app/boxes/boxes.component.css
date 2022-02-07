@@ -35,10 +35,7 @@ a {
   }
 }
 
-/* housekeeping stuff
- * --gradient list, to be replaced at some point with randomizer?
- * --@media queries to ensure control of dynamic design
- */
+/* --gradient list, to be replaced at some point with randomizer? */
 .card-grid .product-card:hover {
   --gradient0: linear-gradient(
     135deg, 
@@ -96,16 +93,16 @@ a {
 }
 
 .card {
-  background: white;
-  border: 2px gray;
   max-height: 288px;
 }
 
 
 .product-card {
   max-height: 288px;
+  background: #bbbbbb;
   color: white;
-/*  border: solid 2px gray;*/
+  /*prevents blur overflow*/
+  overflow: hidden;
 }
 
 .product-card:active {

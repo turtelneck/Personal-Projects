@@ -28,11 +28,11 @@ export class BoxesComponent implements OnInit {
   }
 
   onHover(boxId: number): void {
-    let gradientId = this.getRandomInt(6);
+    // let gradientId = this.getRandomInt(6);
 
     // Changes gradient, which pushes to the 
     // background property of each card.
-    this.gradient = `var(--gradient${gradientId.toString()}) center/180%`;
+    // this.gradient = `var(--gradient${gradientId.toString()}) center/180%`;
     
     // show image of box associated with card
     // -10 required because object ids start at 11

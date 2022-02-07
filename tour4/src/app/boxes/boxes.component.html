@@ -2,8 +2,7 @@
   <div *ngFor="let box of boxes; let i = index"
   class="card" id="{{'card' + i}}">
     <a routerLink="/detail/{{box.id}}">
-      <div 
-      [ngStyle]="{'background': gradient}" 
+      <div [ngStyle]="{'background': gradient}" 
       (mouseover)="onHover(box.id)"
       (mouseleave)="offHover()"
       class="product-card">
