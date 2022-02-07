@@ -4,6 +4,33 @@ a,div,img,span {
   border-radius: inherit;
 }
 
+/* update border-radius attribute when single column */
+@media (min-width: 630px) {
+  #card0 {
+    border-top-left-radius: 1rem;
+  }
+  #card1 {
+    border-top-right-radius: 1rem;
+  }
+  #card6 {
+    border-bottom-left-radius: 1rem;
+  }
+  #card7 {
+    border-bottom-right-radius: 1rem;
+  }
+}
+
+@media (max-width: 629px) {
+  #card0 {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+  #card7 {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+}
+
 /* housekeeping stuff
  * --gradient list, to be replaced at some point with randomizer?
  * --@media queries to ensure control of dynamic design
@@ -154,7 +181,6 @@ a {
 img {
   max-width: 725px;
   max-height: 725px;
+  min-height: 288px;
   width: 95%;
-  height: auto;
-  margin: auto;
 }

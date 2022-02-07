@@ -1,11 +1,6 @@
 <div class="card-grid">
   <div *ngFor="let box of boxes; let i = index"
-  [attr.data-index]="i"
-  [style.borderTopLeftRadius]="(i === 0) ? '16px' : '0px'"
-  [style.borderTopRightRadius]="(i === 1) ? '16px' : '0px'"
-  [style.borderBottomLeftRadius]="(i === 6) ? '16px' : '0px'"
-  [style.borderBottomRightRadius]="(i === 7) ? '16px' : '0px'"
-  class="card">
+  class="card" id="{{'card' + i}}">
     <a routerLink="/detail/{{box.id}}">
       <div 
       [ngStyle]="{'background': gradient}" 
