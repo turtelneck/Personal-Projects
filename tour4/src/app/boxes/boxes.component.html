@@ -4,8 +4,8 @@
     <a routerLink="/detail/{{box.id}}">
       <div 
       [ngStyle]="{'background': gradient}" 
-      (mouseover)="pickGradient(box.id)"
-      (mouseleave)="removeGradient()"
+      (mouseover)="onHover(box.id)"
+      (mouseleave)="offHover()"
       class="product-card">
 
         <img class="card-img" src="{{box.imageAddress}}" alt="{{box.imageAltDescription}}">

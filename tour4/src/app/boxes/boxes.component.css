@@ -119,21 +119,18 @@ a {
 
 .card-title {
   display: block;
+  position: relative;
+  top: -288px;
+  background: #36363680;
   font-family: playFairSc;
   text-align: center;
   font-size: 26px;
   line-height: 288px;
   margin: auto;
-  /*@media (max-width: 1221px)*/
-  position: relative;
-  top: -288px;
-  background: #36363680;
 }
 
-/* ---image logic--- */
-
-/* When the page gets too small for images to be taller
- * than the card (288px), they will display in the cards
+/* When the page gets small enough, 
+ * images no longer display on the right.
  */
 @media (min-width: 1222px) {
   .img-container {
@@ -141,35 +138,12 @@ a {
     grid-template-columns: 1fr;
     place-content: center;
   }
-/*  .card-img {
-    display: none;
-  }*/
-/*  .product-card {
-    color: black;
-  }
-  .product-card:hover {
-    color: white;
-  }*/
 }
 
 @media (max-width: 1221px) {
   .img-container {
     display: none;
   }
-/*  .card-img {
-    display: block;
-  }*/
-/*  .card-title {
-    position: relative;
-    top: -288px;
-    background: #36363680;
-  }*/
-/*  .product-card {
-    color: white;
-  }
-  .product-card:hover {
-    color: greenyellow;
-  }*/
 }
 
 
@@ -183,11 +157,10 @@ a {
 }
 
 .card-img {
+  display: block;
   width: 100%;
   object-fit: cover;
   max-height: 288px;
-  /*@media (max-width: 1221px)*/
-  display: block;
 }
 
 img {

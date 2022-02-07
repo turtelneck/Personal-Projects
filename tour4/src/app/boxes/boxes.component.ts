@@ -27,10 +27,11 @@ export class BoxesComponent implements OnInit {
     .subscribe(boxes => this.boxes = boxes);
   }
 
-  pickGradient(boxId: number): void {
+  onHover(boxId: number): void {
     let gradientId = this.getRandomInt(6);
 
-    // show gradient in card
+    // Changes gradient, which pushes to the 
+    // background property of each card.
     this.gradient = `var(--gradient${gradientId.toString()}) center/180%`;
     
     // show image of box associated with card
@@ -38,7 +39,7 @@ export class BoxesComponent implements OnInit {
     this.selectedBox = boxId-10;
   }
 
-  removeGradient(): void {
+  offHover(): void {
     // remove gradient
     this.gradient = 'white';
     // hide image
