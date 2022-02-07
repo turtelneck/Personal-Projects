@@ -1,5 +1,9 @@
 /* boxes.Component's private CSS styles */
 
+a,div,img,span {
+  border-radius: inherit;
+}
+
 /* housekeeping stuff
  * --gradient list, to be replaced at some point with randomizer?
  * --@media queries to ensure control of dynamic design
@@ -144,6 +148,7 @@ a {
   top:  9rem;
   width: calc(100vw - 51rem);
   height: calc(100vh - 10rem);
+  border-radius: 6px;
 }
 
 img {

@@ -13,14 +13,13 @@ export class BoxesComponent implements OnInit {
   boxes: Box[] = [];
   
   // properties for css
-  gradient: string = '';
+  gradient: string = 'var(--gradient1)';
   selectedBox: number = -1;
 
   constructor(private boxService: BoxService) { }
 
   ngOnInit(): void {
     this.getBoxes();
-    this.gradient = 'var(--gradient1)';
   }
 
   getBoxes(): void {
