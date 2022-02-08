@@ -126,6 +126,10 @@ a {
   z-index: 1;
 }
 
+.card-title:hover {
+  background: #afafaf75;
+}
+
 .card-img {
   display: block;
   position: relative;
@@ -137,7 +141,7 @@ a {
 }
 
 .card-title:hover + .card-img {
-  filter: blur(5px);
+  filter: blur(10px);
 }
 
 /* When the page gets small enough, 
