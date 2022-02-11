@@ -142,24 +142,23 @@ span {
 
 .product-copy {
   display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  height: 288px;
+  font-size: 18px;
+  text-align: justify;
+  padding: 0 6px;
 }
 
 /*hover logic*/
 .card-text-container:hover {
   background: #afafaf75;
-  display: grid;
-  grid-template-rows: repeat(8, 1fr);
-  place-content: center;
-  align-items: center;
 }
 
 .card-text-container:hover > .product-title {
   grid-row: 3;
-  margin: auto;
-}
-
-.card-text-container:hover > .comma {
-  display: none;
 }
 
 .card-text-container:hover > .product-price {
@@ -167,9 +166,7 @@ span {
 }
 
 .card-text-container:hover > .product-copy {
-  display: block;
-  grid-row: 6;
-  padding: 0 1rem;
+  display: flex;
 }
 
 .card-img {
