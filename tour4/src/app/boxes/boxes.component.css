@@ -131,6 +131,10 @@ span {
 }
 
 .product-title {
+  margin-left: 6px;
+}
+
+.comma {
 }
 
 .product-price {
@@ -151,6 +155,11 @@ span {
 
 .card-text-container:hover > .product-title {
   grid-row: 3;
+  margin: auto;
+}
+
+.card-text-container:hover > .comma {
+  display: none;
 }
 
 .card-text-container:hover > .product-price {
