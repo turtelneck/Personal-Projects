@@ -36,40 +36,6 @@ a {
   }
 }
 
-/* --gradient list, to be replaced at some point with randomizer? */
-.card-grid .product-card:hover {
-  --gradient0: linear-gradient(
-    135deg, 
-    rgba(145,255,140,0.65) 0%,
-    rgba(220,155,255,1) 90%
-  );
-  --gradient1: linear-gradient(
-    45deg,
-    rgba(120,255,255,.9) 10%,
-    rgba(128,255,123,0.65) 100%
-  );
-  --gradient2: linear-gradient(
-    70deg,
-    rgba(255,112,112,.6) 0%,
-    rgba(121,255,255,.8) 70%
-  );
-  --gradient3: linear-gradient(
-    25deg,
-    rgba(121,255,255,.8) 10%,
-    rgba(255,112,229,.6) 70%
-  );
-  --gradient4: linear-gradient(
-    110deg,
-    rgba(255,185,110,1) 0%,
-    rgba(190,120,255,1) 80%
-  );
-  --gradient5: linear-gradient(
-    15deg,
-    rgba(247,255,112,1) 0%,
-    rgba(121,211,255,1) 80%
-  );
-}
-
 /* when the page gets only wide enough to contain 2 columns,
  * I want those columns to auto-fill all space available.
  */
@@ -104,15 +70,6 @@ a {
 .product-card {
   max-height: 288px;
   color: white;
-}
-
-.product-card:active {
-  background-color: #525252;
-  color: #fafafa;
-}
-
-.product-card:hover {
-  color: greenyellow;
 }
 
 .card-text-container {
@@ -155,6 +112,8 @@ span {
 /*hover logic*/
 .card-text-container:hover {
   background: #afafaf75;
+  color: #5fff5c;
+  text-shadow: black 0px 0px 8px;
 }
 
 .card-text-container:hover > .product-title {
