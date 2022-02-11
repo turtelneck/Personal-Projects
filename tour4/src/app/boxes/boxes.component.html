@@ -7,7 +7,11 @@
       (mouseleave)="offHover()"
       class="product-card">
 
-        <span class="card-title">{{box.name}}</span>
+        <div class="card-text-container">
+          <span class="product-title">{{box.name}}</span>
+          <span class="product-price">{{box.price}}</span>
+          <span class="product-copy">test test test test test test test test test test test test test test test test test test test test test test</span>
+        </div>
         <img class="card-img" src="{{box.imageAddress}}" alt="{{box.imageAltDescription}}">
       
       </div>
