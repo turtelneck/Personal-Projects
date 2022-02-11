@@ -2,6 +2,7 @@
 
 a,div,img,span {
   border-radius: inherit;
+  font-family: ralewayLight;
 }
 
 a {
@@ -114,20 +115,52 @@ a {
   color: greenyellow;
 }
 
-.card-title {
-  display: block;
+.card-text-container {
   position: relative;
   background: #36363680;
-  font-family: playFairSc;
-  text-align: center;
-  font-size: 26px;
-  line-height: 288px;
-  margin: auto;
+  height: 288px;
   z-index: 1;
 }
 
-.card-title:hover {
+/*span elements*/
+span {
+  position: relative;
+  text-align: center;
+  font-size: 26px;
+  margin: auto;
+}
+
+.product-title {
+}
+
+.product-price {
+}
+
+.product-copy {
+  display: none;
+}
+
+/*hover logic*/
+.card-text-container:hover {
   background: #afafaf75;
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  place-content: center;
+  align-items: center;
+}
+
+.card-text-container:hover > .product-title {
+  grid-row: 3;
+}
+
+.card-text-container:hover > .product-price {
+  grid-row: 4;
+}
+
+.card-text-container:hover > .product-copy {
+  display: block;
+  grid-row: 6;
+  padding: 0 1rem;
 }
 
 .card-img {
@@ -140,7 +173,7 @@ a {
   z-index: 0;
 }
 
-.card-title:hover + .card-img {
+.card-text-container:hover + .card-img {
   filter: blur(10px);
 }
 
@@ -175,6 +208,10 @@ img {
   max-height: 725px;
   min-height: 288px;
   width: 95%;
+}
+
+.img-container img {
+  margin: auto;
 }
 
 
