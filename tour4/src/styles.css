@@ -5,6 +5,11 @@
     src: url(./assets/fonts/PlayfairDisplaySC-Regular.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: ralewayLight;
+  src: url(./assets/fonts/Raleway-Light.ttf) format("truetype");
+}
+
 body {
 	margin: 0;
 	background-color: #cdcdcd;
