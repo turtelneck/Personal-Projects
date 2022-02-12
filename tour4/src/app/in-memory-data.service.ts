@@ -12,7 +12,7 @@ export class InMemoryDataService implements InMemoryDbService {
         id: 10,
         name: 'Stō Prem Mk I',
         price: '330.99',
-        description: 'A box for every occasion, especially if that occasion is showing up in the corner of a sci-fi TV set.',
+        description: 'A box for every occasion, especially if that occasion is that you need something to put in the corner of your sci-fi TV set.',
         search: 'Sto Preem, Mk I',
         imageAddress: 'assets/img/sto-preem-mk-1.jpg',
         imageAltDescription: 'sto preem mk i' 
@@ -21,7 +21,7 @@ export class InMemoryDataService implements InMemoryDbService {
         id: 11,
         name: 'Stō Prem Lite',
         price: '220.99',
-        description: 'For those without space for the Mk I, but that still want friends to question their tastes in storage furniture.',
+        description: 'The Stō Prem Lite is for those who don\'t have space for the Mk I but still want friends to question their taste in storage furniture.',
         search: 'Sto Preem Lite',
         imageAddress: 'assets/img/sto-preem-lite.jpg',
         imageAltDescription: 'sto preem lite'
@@ -30,7 +30,7 @@ export class InMemoryDataService implements InMemoryDbService {
         id: 12,
         name: 'Cargo Stō',
         price: '6150.99',
-        description: 'We don\'t actually stock these. If you buy from us, we\'ll just buy one and sell it to you at a premium.',
+        description: 'We don\'t actually stock these. If you buy this we\'ll just buy one ourselves and sell it to you at a premium.',
         search: 'Cargo Sto',
         imageAddress: 'assets/img/cargo-sto.jpg',
         imageAltDescription: 'cargo sto'
@@ -48,7 +48,7 @@ export class InMemoryDataService implements InMemoryDbService {
         id: 14,
         name: 'Scrapwood Stō',
         price: '50.99',
-        description: 'We don\'t know why you\'d want this ugly thing, but at least if you buy it we won\'t have to look at it anymore.',
+        description: 'We don\'t know why you\'d want anything made out of scrapwood, but at least if you buy it we won\'t have to look at it anymore.',
         search: 'Scrapwood Sto',
         imageAddress: 'assets/img/scrapwood-sto.jpg',
         imageAltDescription: 'scrapwood sto'
@@ -75,7 +75,7 @@ export class InMemoryDataService implements InMemoryDbService {
         id: 17,
         name: 'Wally',
         price: 'priceless',
-        description: 'This is Wally. He loves you. And he\'s not for sale! How could we put a price on that smile?',
+        description: 'This is Wally. He loves you. He may not be for sale, but in a way he\'s already yours. Who can put a price on that loving smile?',
         search: 'Wally',
         imageAddress: 'assets/img/wally.jpg',
         imageAltDescription: 'wally the walrus' }
