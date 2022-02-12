@@ -8,11 +8,20 @@
       class="product-card">
 
         <div class="card-text-container">
-          <span class="product-title">{{box.name}}</span>
-          <span class="comma">, </span>
-          <span class="product-price">{{box.price}}</span>
-          <span class="product-copy">{{box.description}}</span>
+
+          <div class="skew" id="title-price-container">
+            <div class="unskew">
+              <span class="card-text" id="product-title">{{box.name}}</span>
+              <span class="card-text" id="comma">, </span>
+              <span class="card-text" id="product-price">{{box.price}}</span>
+            </div>
+          </div>
+
+          <div class="product-copy-container">
+            <span class="card-text" id="product-copy">{{box.description}}</span>
+          </div>
         </div>
+
         <img class="card-img" src="{{box.imageAddress}}" alt="{{box.imageAltDescription}}">
       
       </div>
