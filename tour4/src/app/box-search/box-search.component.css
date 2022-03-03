@@ -2,7 +2,7 @@
 
 @media (min-width: 630px) {
   .header {
-    grid-template-columns: 9vw minmax(20rem, auto) 24rem 1fr;
+    grid-template-columns: 8vw minmax(21rem, auto) 21rem 1fr;
   }
   #search-component {
     display: flex;
@@ -54,8 +54,8 @@
 #search-component {
   align-items: center;
   justify-content: center;
-  max-width: 24rem;
-  width: calc(100vw - 24rem);
+  max-width: 21rem;
+  width: calc(100vw - 21rem);
 }
 
 input {
