@@ -38,7 +38,7 @@ export class InMemoryDataService implements InMemoryDbService {
       {
         id: 13,
         name: 'Card Stō',
-        price: '30.99',
+        price: '80.99',
         description: 'A premium cardboard experience. You may not notice the difference, but your wallet will.',
         search: 'Card Sto',
         imageAddress: 'assets/img/card-sto.jpg',
@@ -47,7 +47,7 @@ export class InMemoryDataService implements InMemoryDbService {
       {
         id: 14,
         name: 'Scrapwood Stō',
-        price: '50.99',
+        price: '90.99',
         description: 'We don\'t know why you\'d want anything made out of scrapwood, but at least if you buy it we won\'t have to look at it anymore.',
         search: 'Scrapwood Sto',
         imageAddress: 'assets/img/scrapwood-sto.jpg',
@@ -57,7 +57,7 @@ export class InMemoryDataService implements InMemoryDbService {
         id: 15,
         name: 'Scrap Stō',
         price: '2610.99',
-        description: 'We literally only stock these so that we can use its name as a play on words riffing off "Scrapwood Stō".',
+        description: 'We only stock these so its name can be a play on "Scrapwood Stō".',
         search: 'Scrap Sto',
         imageAddress: 'assets/img/scrap-sto.jpg',
         imageAltDescription: 'scrap sto'
@@ -66,7 +66,7 @@ export class InMemoryDataService implements InMemoryDbService {
         id: 16,
         name: 'Treasure Stō',
         price: '300.99',
-        description: 'We messed up while making the locks, so these don\'t actually open. Yes, we\'re still selling them for $300.',
+        description: 'Yes, we messed up while making the locks so these don\'t actually open. No, we\'re not changing the price.',
         search: 'Treasure Sto',
         imageAddress: 'assets/img/treasure-sto.jpg',
         imageAltDescription: 'treasure sto'
@@ -75,7 +75,7 @@ export class InMemoryDataService implements InMemoryDbService {
         id: 17,
         name: 'Wally',
         price: 'priceless',
-        description: 'This is Wally. He loves you. He may not be for sale, but in a way he\'s already yours. Who can put a price on that loving smile?',
+        description: 'This is Wally. He loves you. He may not be for sale, but in a way he\'s already yours. Who could put a price on that smile?',
         search: 'Wally',
         imageAddress: 'assets/img/wally.jpg',
         imageAltDescription: 'wally the walrus' }
