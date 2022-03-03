@@ -2,9 +2,12 @@
 
 @media (min-width: 630px) {
   .header {
-    grid-template-columns: 9vw minmax(20rem, auto) 1fr;
+    grid-template-columns: 9vw minmax(20rem, auto) 24rem 1fr;
   }
   #search-component {
+    display: flex;
+  }
+  .search-result {
     display: flex;
   }
 }
@@ -13,10 +16,13 @@
   .header {
     grid-template-columns: 100vw;
   }
+  #empty-space {
+    display: none;
+  }
   #search-component {
     display: none;
   }
-  #empty-space {
+  .search-result {
     display: none;
   }
 }
@@ -81,10 +87,12 @@ li {
   color: white;
 }
 
-ul .search-result {
-  margin-top: 0;
-  padding-left: 0;
+.search-result {
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 8rem;
+  padding-right: 1rem;
 }
-
 
 /*TODO: add magnifying glass icon and 'search' pre-filled text to the search bar*/
