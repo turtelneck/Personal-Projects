@@ -1,9 +1,14 @@
-<div *ngIf="box" class="details-container">
-  <h2>{{box.name | uppercase}} Details</h2>
-  <div><span>id: </span>{{box.id}}</div>
-  <div>
-    <label for="box-name">Box name: </label>
-    <p id="box-name">{{box.name}}</p>
+<div class="details-background">
+  <div *ngIf="box" class="details-container">
+    <h1 class="details-title center">{{box.name | uppercase}}</h1>
+    <p class="details-copy justify">{{box.titles}}</p>
+    <h2>About</h2>
+    <p class="details-copy justify">{{box.description}}</p>
+    <h2>Tech</h2>
+    <p class="details-copy justify">{{box.tech}}</p>
+    
+    <div class="button-container">
+      <button (click)="goBack()">back</button>
+    </div>
   </div>
-  <button (click)="goBack()">go back</button>
 </div>

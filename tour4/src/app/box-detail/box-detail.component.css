@@ -1,24 +1,63 @@
 /* BoxDetailComponent's private CSS styles */
+h2,p,span,button {
+  font-family: arial;
+}
+
+.details-background {
+  background: #e1ffdc;
+  width: 90vw;
+  max-width: 60rem;
+  margin: auto;
+  padding-top: 8rem;
+}
+
 .details-container {
-  padding-top: 9rem;
+  width: 90%;
+  margin: auto;
 }
 
-label {
-  color: #435960;
-  font-weight: bold;
+h1 {
+  font-weight: normal;
+  margin: 3rem 0 3rem 0;
 }
 
-input {
-  font-size: 1em;
-  padding: .5rem;
+h2 {
+  margin: 2.5rem 0 1.5rem 0;
+}
+
+.details-title {
+  font-size: 32px;
+  text-align: center;
+}
+
+.details-header {
+  font-size: 20px;
+}
+
+.details-copy {
+  font-size: 16px;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.center {
+  text-align: center;
+}
+
+.button-container {
+  display: grid;
+  align-content: center;
 }
 
 button {
-  margin-top: 20px;
   background-color: #eee;
-  padding: 1rem;
+  margin: 1.8rem auto;
+  padding: 0.8rem 1.1rem;
   border-radius: 4px;
   font-size: 1rem;
+  font-variant: small-caps;
 }
 
 button:hover {
