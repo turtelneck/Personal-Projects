@@ -3,7 +3,8 @@ export interface Box {
   name: string;
   titles: string;
   price: string;
-  description: string;
+  shortdesc: string;
+  longdesc: string;
   tech: string;
   search: string;
   imageAddress: string;

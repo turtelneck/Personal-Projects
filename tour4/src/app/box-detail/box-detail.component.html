@@ -2,8 +2,9 @@
   <div *ngIf="box" class="details-container">
     <h1 class="details-title center">{{box.name | uppercase}}</h1>
     <p class="details-copy justify">{{box.titles}}</p>
+    <p class="details-copy justify">{{box.shortdesc}}</p>
     <h2>About</h2>
-    <p class="details-copy justify">{{box.description}}</p>
+    <p class="details-copy">{{box.longdesc}}</p>
     <h2>Tech</h2>
     <p class="details-copy justify">{{box.tech}}</p>
     
